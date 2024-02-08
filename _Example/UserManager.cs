@@ -22,7 +22,7 @@ namespace _Example
             Users[_currentposition] = user;
             _currentposition++;
             
-            _smsService.SendSMS("0507695539",$"You are completely registered with the Name:{user.Name}");
+            _smsService.SendSMS("050769****",$"You are completely registered with the Name:{user.Name}");
 
         }
         public void EditUser(User user)
@@ -31,7 +31,7 @@ namespace _Example
             string oldname= olduser.Name;
             olduser.Name = user.Name;
             
-            _smsService.SendSMS("0507695539", $"{oldname} changed his/her name to:{user.Name}");
+            _smsService.SendSMS("050769****", $"{oldname} changed his/her name to:{user.Name}");
         }
         private User GetUserById(int id)
         {
